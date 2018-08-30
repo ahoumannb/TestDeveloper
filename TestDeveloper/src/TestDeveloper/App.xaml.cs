@@ -33,13 +33,13 @@ namespace TestDeveloper
             InitializeComponent();
 
             //await NavigationService.NavigateAsync("NavigationPage/MainPage");
-            await NavigationService.NavigateAsync("TabbedPage?createTab=ShoesPage&createTab=TradePage&createTab=YouPage");
+            await NavigationService.NavigateAsync("ShoeTabbedPage?createTab=ShoesPage&createTab=TradePage&createTab=YouPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<TabbedPage>();
+            containerRegistry.RegisterForNavigation<ShoeTabbedPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<ShoesPage, ShoesPageViewModel>();
             containerRegistry.RegisterForNavigation<TradePage, TradePageViewModel>();
