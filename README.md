@@ -1,2 +1,2 @@
 # TestDeveloper
-Xamarin.Forms project made for test purposes aaa
+Xamarin.Forms project made for test purposes
